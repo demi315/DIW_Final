@@ -1,0 +1,64 @@
+img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-left: 3vw;
+}
+
+h2{
+	text-align: center;
+	display: inline-block;
+	width: 70%;
+}
+
+main{
+	width: 70vw;
+	margin: 1vh 1vw;
+}
+
+aside{
+	width: 25vw;
+	margin: 10vh 1vw;
+}
+
+body > div{
+	display: flex;
+}
+
+main h3, p{
+	margin-left: 15vw;
+}
+aside h3{
+	text-align: center;
+}
+li{
+	margin: 3vh;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+}
+
+header a, header div{
+	margin: 3vh 2vw;
+}
+
+header div{
+	margin-right: 0px;
+}
+
+header button{
+	background-color: #444; /* Green */
+	border: none;
+	padding: 1vh 1vw;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	border-radius: 10%;
+}
+
+header button:hover{
+	box-shadow: 1px 1px 1px 1px rgb(255,255,255,0.6);
+}

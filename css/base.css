@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'F1-Regular';
+	src: url('../fonts/Formula1-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #444444;
+	
+}
+
+* {
+	font-family: 'F1-Regular';
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+header, nav, footer{
+	background-color: #006168;
+}
+
+header{
+	text-align: center;
+	padding: 1vh;
+}
+
+nav{
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 3vh;
+}
+
+main{
+	min-height: 90vh;
+}
+
+footer{
+	text-align: center;
+}

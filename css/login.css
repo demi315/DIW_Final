@@ -1,0 +1,58 @@
+#form{
+	background-color: #006168;
+	display: flex;
+	justify-content: center;
+	border: black solid 1px;
+	margin: 1%;
+	padding: 10vh 5vw;
+	padding-right: 2vw;
+	overflow-wrap: break-word;
+}
+
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center	;
+	align-items: center;
+}
+
+header, footer, nav{
+	width: 100vw;
+}
+
+main h2{
+	text-align: center;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+}
+
+header a, header div{
+	margin: 3vh 2vw;
+}
+
+header div{
+	margin-right: 6vw;
+}
+
+button{
+	background-color: #444; /* Green */
+	border: none;
+	padding: 1vh 1vw;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	border-radius: 10%;
+	margin-top: 2vh;
+	margin-left: 2vw;
+}
+
+button:hover{
+	box-shadow: 1px 1px 1px 1px rgb(255,255,255,0.6);
+}
+input{
+	color: #000;
+}

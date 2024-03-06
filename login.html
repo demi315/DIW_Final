@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="icon" href="imagenes/amLogo.jpeg">
+	<script src="js_jquery/login.js"></script>
+</head>
+<body>
+	<header>
+		<a href="index.html">
+			<svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+				<path fill-rule="evenodd" d="M11.3 3.3a1 1 0 0 1 1.4 0l6 6 2 2a1 1 0 0 1-1.4 1.4l-.3-.3V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3c0 .6-.4 1-1 1H7a2 2 0 0 1-2-2v-6.6l-.3.3a1 1 0 0 1-1.4-1.4l2-2 6-6Z" clip-rule="evenodd"/>
+		  	</svg> 
+		</a>
+		<h1>A LO BAJINI</h1>
+		<div></div>
+	</header>
+	<nav>
+		<a href="la33.html">La 33</a>
+		<a href="elCoche.html">El Coche</a>
+		<a href="elNano.html">El Nano</a>
+		<a href="elForo.html">El Foro</a>
+	</nav>
+	<main>
+		<h2>Iniciar Sesión</h2>
+		<div id="form">
+			<div style="max-width: 65%;">
+				<h4 style="margin-top: 1vh;">Nombre de usuario</h4>
+				<input type="text" id="user" placeholder="Usuario">
+				<h4>Contraseña</h4>
+				<input type="password" id="pass" placeholder="Contraseña">
+				<div id="err" style="display: none; text-align: left; margin-top: 2vh;">
+					Los datos introducidos son incorrectos
+				</div>
+				<button onclick="iniciarSesion()">Iniciar Sesión</button>
+			</div>
+		</div>
+	</main>
+	<footer>
+		© La 33 a lo bajini<br>2024<br><a href="sobreNosotros.html">Sobre Nosotros</a>
+	</footer>
+</body>
+</html>

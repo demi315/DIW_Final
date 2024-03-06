@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A Lo Bajini</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="icon" href="imagenes/amLogo.jpeg">
+	<script src="js_jquery/login.js"></script>
+</head>
+<body onload="cargarUser()">
+	<header>
+		<a href="index.html">
+			<svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+				<path fill-rule="evenodd" d="M11.3 3.3a1 1 0 0 1 1.4 0l6 6 2 2a1 1 0 0 1-1.4 1.4l-.3-.3V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3c0 .6-.4 1-1 1H7a2 2 0 0 1-2-2v-6.6l-.3.3a1 1 0 0 1-1.4-1.4l2-2 6-6Z" clip-rule="evenodd"/>
+		  	</svg>  
+		</a>
+		<h1>A LO BAJINI</h1>
+		<div id="login">
+			
+		</div>
+	</header>
+	<nav>
+		<a href="la33.html">La 33</a>
+		<a href="elCoche.html">El Coche</a>
+		<a href="elNano.html">El Nano</a>
+		<a href="elForo.html">El Foro</a>
+	</nav>
+	<main>
+		<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+		<!-- Full-width images with number and caption text -->
+		<div class="mySlides fade">
+		<div class="numbertext">1 / 5</div>
+		<img src="imagenes/slideshare-1.jpeg" style="width:100%" alt="Fernando Alonso celebrando una victoria con Renault">
+		</div>
+	
+		<div class="mySlides fade">
+		<div class="numbertext">2 / 5</div>
+		<img src="imagenes/slideshare-2.jpeg" style="width:100%" alt="Fernando Alonso bajando por las escaleras">
+		</div>
+	
+		<div class="mySlides fade">
+		<div class="numbertext">3 / 5</div>
+		<img src="imagenes/slideshare-3.jpeg" style="width:100%" alt="Fernando Alonso en una rueda de prensa">
+		</div>
+
+		<div class="mySlides fade">
+		<div class="numbertext">4 / 5</div>
+		<img src="imagenes/slideshare-4.jpeg" style="width:100%" alt="Fernando Alonso dándose la mano con su mecánico">
+		</div>
+
+		<div class="mySlides fade">
+		<div class="numbertext">5 / 5</div>
+		<img src="imagenes/slideshare-5.jpeg" style="width:100%" alt="Fernando Alonso descansando sentado en el podio">
+		</div>
+	
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+		<span class="dot" onclick="currentSlide(5)"></span>
+	</div>
+	</main>
+	<span id="licencia">Imágenes: &#169; <a href="https://lat.motorsport.com/info/terms-of-use/" target="_blank">Motorsport</a></span>
+	<footer>
+		© La 33 a lo bajini<br>2024<br><a href="sobreNosotros.html">Sobre Nosotros</a>
+	</footer>
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		let i;
+		let slides = document.getElementsByClassName("mySlides");
+		let dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+		}
+	</script>
+</body>
+</html>
